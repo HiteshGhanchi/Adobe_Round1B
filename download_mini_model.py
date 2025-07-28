@@ -2,10 +2,8 @@ import os
 import sys
 from transformers import AutoTokenizer, AutoModel
 
-# --- Configuration ---
-# This is the specific model we're using because it's small (<100MB) and fast.
+
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
-# This is the directory where we will save the model files.
 SAVE_DIRECTORY = "./all-MiniLM-L6-v2-model"
 
 def download_model():

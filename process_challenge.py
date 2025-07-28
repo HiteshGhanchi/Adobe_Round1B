@@ -1,20 +1,3 @@
-"""
-Docling-based Document Processing System for Challenge 1b
-
-This script processes PDF documents using Docling with optimized settings.
-It is designed to run seamlessly both locally and inside the provided Docker container.
-
-Key Features:
-- Fast PDF processing with 8 threads
-- OCR disabled for speed
-- Image placeholder mode to ignore images
-- CPU-only processing
-- Semantic search and ranking for document sections
-
-Author: Hitesh & Gemini
-Version: 5.2 (Final Portable Version)
-"""
-
 import os
 import sys
 import json
@@ -27,26 +10,22 @@ from typing import List, Dict
 from collections import Counter, defaultdict
 import numpy as np
 
-# LlamaIndex imports for document processing and embeddings
 from llama_index.core import Settings, VectorStoreIndex, SimpleDirectoryReader, Document
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.readers.docling import DoclingReader
 from llama_index.core.node_parser import MarkdownNodeParser
 
-# Docling imports for custom configuration
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions, TableFormerMode
 from docling.datamodel.accelerator_options import AcceleratorDevice, AcceleratorOptions
 
-# Suppress a harmless warning from PyTorch on CPU-only systems
 warnings.filterwarnings("ignore", message="'pin_memory' argument is set as true but no accelerator is found")
 
-# --- Configuration ---
+# sentence-transformers/all-MiniLM-L6-v2
 LOCAL_EMBEDDING_MODEL_PATH = "./all-MiniLM-L6-v2-model"
 
-# --- DYNAMIC PATH CONFIGURATION ---
-# This block makes the script work both locally and inside Docker.
+# for both docker and local
 DOCKER_DOCLING_PATH = "/app/custom_docling_models"
 LOCAL_DOCLING_PATH = "./custom_docling_models"
 
@@ -110,8 +89,8 @@ def load_documents(pdf_directory: str, document_infos: List[Dict]) -> List[Docum
         # Create PDF pipeline options with all performance settings.
         pipeline_options = PdfPipelineOptions(
             artifacts_path=DOCLING_ARTIFACTS_PATH,
-            run_force_ocr=False,
-            do_table_structure=True,
+            do_ocr=False,
+            do_table_structure=False,
             accelerator_options=accelerator_options
         )
         pipeline_options.table_structure_options.mode = TableFormerMode.FAST
