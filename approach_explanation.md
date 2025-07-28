@@ -48,7 +48,9 @@ This command builds the Docker image, installing all dependencies and downloadin
 
 Navigate to the project's root directory in your terminal and run:
 
-`docker build -t adobe-challenge-1b .`
+```
+docker build -t adobe-challenge-1b .
+```
 
 ### Step 2: Run the Analysis
 Once the image is built, you can run the analysis on any collection. This step runs completely offline.
@@ -57,14 +59,20 @@ The command mounts the local collection folder into the container, allowing the 
 
 <b>To process Collection 1:</b>
 
-`docker run --rm -v "$(pwd)/Collection 1":/app/"Collection 1" adobe-challenge-1b "Collection 1"`
+```
+docker run --rm -v "$(pwd)/Collection 1":/app/"Collection 1" adobe-challenge-1b "Collection 1"
+```
 
 <b>To process Collection 2:</b>
 
-`docker run --rm -v "$(pwd)/Collection 2":/app/"Collection 2" adobe-challenge-1b "Collection 2"`
+```
+docker run --rm -v "$(pwd)/Collection 2":/app/"Collection 2" adobe-challenge-1b "Collection 2"
+```
 
 <b>To process Collection 3:</b>
 
-`docker run --rm -v "$(pwd)/Collection 3":/app/"Collection 3" adobe-challenge-1b "Collection 3"`
+```
+docker run --rm -v "$(pwd)/Collection 3":/app/"Collection 3" adobe-challenge-1b "Collection 3"
+```
 
 Upon completion, a `challenge1b_output.json` file will be created inside the respective collection folder.

@@ -27,6 +27,8 @@ RUN mkdir -p /app/custom_docling_models
 # THE FIX: Copy the ENTIRE 'models' directory from the builder stage's cache.
 # This is simpler and more robust than copying individual sub-folders.
 COPY --from=builder /root/.cache/docling/models /app/custom_docling_models
+RUN rm -r ./custom_docling_models/ds4sd--CodeFormula/
+RUN rm -r ./custom_docling_models/EasyOcr/
 
 # Copy and run the script to download the small embedding model.
 COPY download_mini_model.py .
