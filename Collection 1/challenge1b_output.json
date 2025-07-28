@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "Travel Planner",
+    "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
+    "processing_timestamp": "2025-07-28T03:17:54.049968"
+  },
+  "extracted_sections": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "section_title": "Introduction",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "section_title": "Outdoor Adventures",
+      "importance_rank": 2,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "section_title": "Tips and Tricks for Packing",
+      "importance_rank": 3,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "section_title": "Beach Hopping",
+      "importance_rank": 4,
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "section_title": "Water Sports",
+      "importance_rank": 5,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "refined_text": "The Ultimate South of France Travel Companion: Your Comprehensive Guide to Packing, Planning, and Exploring",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "refined_text": "- Verdon Gorge: Take a family hike or rent paddle boats to explore the stunning Verdon Gorge. - Camargue Natural Park: Explore wetlands with wild horses and flamingos, and enjoy horseback riding, bird watching, and boat tours. - Various Locations: Try tree-top adventure parks with zip lines, rope bridges, and climbing challenges. - Gorges du Tarn: Go on a family-friendly hike and enjoy the scenic views. - Lake Annecy: Rent bikes and ride along the lake's picturesque bike paths. - Pyrenees: Take a cable car ride for stunning mountain views and easy hiking trails. - Dordogne: Explore the region's caves and prehistoric sites with guided tours suitable for children.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "refined_text": "- Check the Weather: Check the forecast before packing to ensure appropriate clothing. - Make a Packing List: Create a list to ensure nothing is forgotten. Cross off items as you pack. - Use Packing Cubes: Organize clothes and maximize space. - Roll Your Clothes: Save space and reduce wrinkles. - Pack Dual-Purpose Items: Choose items that serve multiple purposes. - Wear Bulky Items: Wear bulky items like coats or boots during travel to save suitcase space. - Pack a Day Bag: Bring a small day bag for daily excursions. - Leave Room for Souvenirs: Leave extra space or bring a foldable bag for souvenirs. - Additional Tips: Pack a small travel umbrella, a reusable shopping bag, and a portable phone charger. Consider using a luggage scale to avoid overweight baggage fees.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "refined_text": "- Nice : Visit the sandy shores and enjoy the vibrant Promenade des Anglais. - Antibes : Relax on the pebbled beaches and explore the charming old town. - Saint-Tropez : Experience the exclusive beach clubs and glamorous atmosphere. - Marseille to Cassis : Explore the stunning limestone cliffs and hidden coves of Calanques National Park. - \u00celes d'Hy\u00e8res : Discover pristine beaches and excellent snorkeling opportunities on islands like Porquerolles and Port-Cros. - Cannes : Enjoy the sandy beaches and luxury beach clubs along the Boulevard de la Croisette. - Menton : Visit the serene beaches and beautiful gardens in this charming town near the Italian border.",
+      "page_number": 1
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "refined_text": "- Cannes, Nice, and Saint-Tropez : Try jet skiing or parasailing for a thrill. - Toulon : Dive into the underwater world with scuba diving excursions to explore wrecks. - Cerb\u00e8re-Banyuls : Visit the marine reserve for an unforgettable diving experience. - Mediterranean Coast : Charter a yacht or join a sailing tour to explore the coastline and nearby islands. - Marseille : Go windsurfing or kitesurfing in the windy bays. - Port Grimaud : Rent a paddleboard and explore the canals of this picturesque village. - La Ciotat : Try snorkeling in the clear waters around the \u00cele Verte.",
+      "page_number": 1
+    }
+  ]
+}

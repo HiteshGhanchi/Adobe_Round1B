@@ -1,0 +1,7 @@
+llama-index
+llama-index-readers-docling
+llama-index-embeddings-huggingface
+transformers
+tqdm
+requests
+numpy
